@@ -1,0 +1,53 @@
+*{
+    margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html{
+    color:#fff;
+    font-size:62.5%;
+
+}
+body{
+    height: 100vh;
+    width:100%;
+    background-image: linear-gradient(
+        to right top,#051937,#004d7a,#008793,#00bf72,#a8eb12
+
+    );
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+h2{
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mybutton{
+   
+background-color: hsl(106, 88%, 67%);
+padding: 0.6rem 2.4rem;
+border-radius: 10rem;
+margin-right: 5.6rem; 
+cursor:pointer;
+transition:all 0.3s linear;
+
+&:hover{
+    box-shadow: inset 0 0 0 0.2rem #f5ee62;
+    background-color: transparent;
+    color:#f5ee62;
+}
+
+}
+#mybutton2{
+background-color:hsl(106, 88%, 67%);
+padding: 0.6rem 2.4rem;
+border-radius: 10rem;
+margin-right: 5.6rem;
+cursor:pointer;
+transition:all 0.3s linear;
+}

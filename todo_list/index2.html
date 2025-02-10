@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try todo </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+     <body>
+    <h1 style="color:saddlebrown ">Todo List</h1>
+    <br>
+    <form >
+        <div>
+
+
+            <input type="text"v id="inputvalue">
+            <button class="btn">Add your Todo</button>
+        </div>
+        <section class="Todo-list-elem">
+            <li></li>
+            <button class="deletebtn">Delete</button>
+            <button class="editbtn"> Edit</button>
+              </section>
+    </form>
+    <script>
+
+        const mainTodoElem=document.querySelector(".Todo-list-elem");
+        const inputvalue = document.getElementById("inputvalue");
+        const addTodoList=(e)=>{
+            e.preventDefault();
+            let localTodoLists =[];
+         const todolistvalue = inputvalue.value.trim();
+         localTodoLists.push(todolistvalue);
+        
+
+             const divElement=document.createElement("div");
+
+            divElement.classList.add("main_todo_div");
+
+            divElement.innerHTML=`<
+            li>{inputvalue.value
+            } </li>  
+             <button class="deletebtn">Delete</button>
+            <button class="editbtn"> Edit</button>`;
+            mainTodoElem.append(divElement);
+
+        };
+
+        document.querySelector(".btn").addEventListener('click',(e)=>{
+            addTodoList(e);
+        });
+
+
+    </script>
+</body>
+</html>

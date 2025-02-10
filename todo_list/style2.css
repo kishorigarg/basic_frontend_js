@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    width:560px;
+    border: 15px solid transparent;
+    margin:auto;
+top:35%;
+left:35%;
+  justify-content: center;
+   text-align: center;
+    align-items: center;
+    background-color: lavender;
+    
+    display: inline;
+
+
+
+}
+.btn{
+    background-color: hsl(106, 88%, 67%);
+    padding: 0.5rem 0.5rem;
+    border-radius: 10rem;
+    margin-right: 3.8rem; 
+    cursor:pointer;
+    transition:all 0.3s linear;
+    font-family: cursive;
+   
+   
+   
+    &:hover{
+        box-shadow: inset 0 0 0 0.2rem #f5ee62;
+        background-color: transparent;
+        color:hsl(106, 88%, 67%);
+    }
+    
+    
+}
+h1{
+    font-family:cursive;
+
+    
+}
+#inputvalue{
+    background-color: hsl(106, 88%, 67%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10rem;
+    margin-right: 4.7rem; 
+    cursor:pointer;
+    transition:all 0.3s linear;
+    font-family: cursive;
+  
+    
+    &:hover{
+        box-shadow: inset 0 0 0 0.2rem #f5ee62;
+        background-color: transparent;
+        color:hsl(106, 88%, 67%);
+    }
+
+}
+.main_todo_div{
+    width:36rem;
+    display: grid;
+    grid-template-columns:1fr 0.3fr;
+    align-items: center;
+    height: auto;
+}
+.deletebtn{
+    background-color: hsl(106, 88%, 67%);
+    padding: 0.5rem 0.5rem;
+    border-radius: 10rem;
+    margin-right: 3.8rem; 
+    cursor:pointer;
+    transition:all 0.3s linear;
+    font-family: cursive;
+
+   
+    &:hover{
+        box-shadow: inset 0 0 0 0.2rem #f5ee62;
+        background-color: transparent;
+        color:hsl(106, 88%, 67%);
+    }
+
+}
+.editbtn{
+    background-color: hsl(106, 88%, 67%);
+    padding: 0.5rem 0.5rem;
+    border-radius: 10rem;
+    margin-right: 3.8rem; 
+    cursor:pointer;
+    transition:all 0.3s linear;
+    font-family: cursive;
+   
+   
+    &:hover{
+        box-shadow: inset 0 0 0 0.2rem #f5ee62;
+        background-color: transparent;
+        color:hsl(106, 88%, 67%);
+    }
+}
+li{
+    cursor: pointer;
+    list-style-type:circle;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    &:hover{
+        color:hsl(106, 88%, 67%);
+    }
+}
